@@ -110,7 +110,14 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a second number ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-bool result = SquareNumber(number1, number2);
 
-Console.WriteLine(result);
+
+if (SquareNumber(number1, number2))
+{
+    Console.WriteLine("Одно из чисел является квадратом другого");
+}
+else
+{
+    Console.WriteLine("Ни одно из чисел не является квадратом другого");
+}
 
