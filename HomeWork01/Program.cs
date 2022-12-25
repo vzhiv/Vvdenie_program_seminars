@@ -69,7 +69,7 @@ else
 Console.Write("Input a number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int current = 1;
+int current = 2;
 
 while(current <= number)
 {
