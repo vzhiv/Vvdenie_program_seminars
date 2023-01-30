@@ -204,8 +204,6 @@ int[,] ChangeArray(int[,] array, int[] index)
 /* int[,] ChangeArray(int[,] array, int[] index)    // Второе решение
 {
     int[,] changeArray = new int[array.GetLength(0) - 1, array.GetLength(1) - 1];
-    int minIndexI = index[0];
-    int minIndexJ = index[1];
 
     for (int i = 0 , x = 0; i < array.GetLength(0); i++, x++)
     {
