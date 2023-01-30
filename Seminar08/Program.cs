@@ -183,15 +183,15 @@ int[,] ChangeArray(int[,] array, int[] index)
             {
                 changeArray[i,j] = array[i, j];
             }
-            if(minIndexI > i && minIndexJ < j)
+            else if(minIndexI > i && minIndexJ < j)
             {
                 changeArray[i ,j - 1] = array[i, j];
             }
-            if(minIndexI < i && minIndexJ > j)
+            else if(minIndexI < i && minIndexJ > j)
             {
                 changeArray[i - 1,j] = array[i, j];
             }
-            if(minIndexI < i && minIndexJ < j)
+            else if(minIndexI < i && minIndexJ < j)
             {
                 changeArray[i - 1,j - 1] = array[i, j];
             }
