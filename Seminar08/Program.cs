@@ -1,7 +1,7 @@
 ﻿Console.Clear();
 // Задача 1. Задайте двумерный массив. Напишите программу, которая поменяет местами a-ю и b-ю строки массива.
 
-int[,] CreateRandom2dArray()
+/* int[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
@@ -59,11 +59,11 @@ Console.Write("Input a number of the second row: ");
 int r2 = Convert.ToInt32(Console.ReadLine());
 
 ChangeRows(newArray, r1, r2);
-Show2dArray(newArray);
+Show2dArray(newArray); */
 
 // Задача 2. Задайте двумерный массив. Напишите программу, которая заменяет строки на столбцы.
 
-/* int[,] CreateRandom2dArray()
+/*int[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
@@ -116,7 +116,7 @@ Show2dArray(result); */
 
 // Задача 3. Из двумерного массива целых чисел удалить строку и столбец, на пересечении которых расположен наименьший элемент. Создание нового массива, минимальный элемент первый
 
-/* int[,] CreateRandom2dArray()
+int[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
@@ -207,5 +207,5 @@ Show2dArray(newArray);
 int[] index = FindMinElement(newArray);
 
 int[,] result = ChangeArray(newArray, index);
-Show2dArray(result); */
+Show2dArray(result);
 
