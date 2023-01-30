@@ -201,11 +201,41 @@ int[,] ChangeArray(int[,] array, int[] index)
     return changeArray;
 }
 
+/* int[,] ChangeArray(int[,] array, int[] index)    // Второе решение
+{
+    int[,] changeArray = new int[array.GetLength(0) - 1, array.GetLength(1) - 1];
+    int minIndexI = index[0];
+    int minIndexJ = index[1];
+
+    for (int i = 0 , x = 0; i < array.GetLength(0); i++, x++)
+    {
+        if(index[0] == i) 
+        {
+            x--;
+            continue;
+        }
+        else
+        {
+            for (int j = 0, y = 0; j < array.GetLength(1); j++, y++)
+            {
+                if(index[1] == j) 
+                {
+                    y--;
+                    continue;
+                }
+                else
+                {
+                    changeArray[x, y] = array[i, j];
+                }
+            }
+        }
+    }
+
+    return changeArray;
+} */
+
 int[,] newArray = CreateRandom2dArray();
 Show2dArray(newArray);
 
-int[] index = FindMinElement(newArray);
-
-int[,] result = ChangeArray(newArray, index);
-Show2dArray(result);
+Show2dArray(ChangeArray(newArray, FindMinElement(newArray)));
 
