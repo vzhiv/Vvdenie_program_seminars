@@ -170,7 +170,7 @@ int[] FindMinElement(int[,] array)
 }
 
 
-int[,] ChangeArray(int[,] array, int[] index)
+/* int[,] ChangeArray(int[,] array, int[] index)
 {
     int[,] changeArray = new int[array.GetLength(0) - 1, array.GetLength(1) - 1];
     int minIndexI = index[0];
@@ -199,9 +199,9 @@ int[,] ChangeArray(int[,] array, int[] index)
 
 
     return changeArray;
-}
+} */
 
-/* int[,] ChangeArray(int[,] array, int[] index)    // Второе решение
+int[,] ChangeArray(int[,] array, int[] index)    // Второе решение
 {
     int[,] changeArray = new int[array.GetLength(0) - 1, array.GetLength(1) - 1];
 
@@ -230,7 +230,7 @@ int[,] ChangeArray(int[,] array, int[] index)
     }
 
     return changeArray;
-} */
+}
 
 int[,] newArray = CreateRandom2dArray();
 Show2dArray(newArray);
